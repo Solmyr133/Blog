@@ -78,6 +78,32 @@
   },
   {
     "ContainingType": "Blog.Controllers.BlogController",
+    "Method": "Delete",
+    "RelativePath": "blog",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Blog.Models.Blogger",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Blog.Controllers.BlogController",
     "Method": "GetById",
     "RelativePath": "blog/{id}",
     "HttpMethod": "GET",
