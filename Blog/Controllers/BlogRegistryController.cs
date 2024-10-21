@@ -40,6 +40,7 @@ namespace Blog.Controllers
             {
                 var result = context.BlogRegistries.Select(x => new {x.Blogger.Name, x.Title, x.Description});
             }
+            return BadRequest();
         }
     }
 }
