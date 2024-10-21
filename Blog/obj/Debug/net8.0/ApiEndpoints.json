@@ -127,5 +127,31 @@
         "StatusCode": 200
       }
     ]
+  },
+  {
+    "ContainingType": "Blog.Controllers.BlogRegistryController",
+    "Method": "Post",
+    "RelativePath": "blogregistry",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "createBlogRegistryDto",
+        "Type": "Blog.Models.DTO\u002BCreateBlogRegistryDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Blog.Models.BlogRegistry",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   }
 ]
