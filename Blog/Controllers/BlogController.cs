@@ -40,6 +40,22 @@ namespace Blog.Controllers
                 }
                 return BadRequest();
             }
+        }
+
+        [HttpGet("{id}")]
+        public ActionResult<Blogger> GetById(Guid id)
+        {
+            using (var context = new BlogDbContext())
+            {
+                var blogger = context.Bloggers.FirstOrDefault(x => x.Id == id);
+
+                if (blogger != null)
+                {
+                    return StatusCode(200, blogger);
+                }
+
+                return NotFound();
+            }
 
         }
     }
